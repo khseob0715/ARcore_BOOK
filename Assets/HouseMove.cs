@@ -17,21 +17,20 @@ public class HouseMove : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     // Use this for initialization
     void Start () {
 
-        MainCamera = GameObject.FindGameObjectsWithTag("MainCamera");
-        transMainCamera = MainCamera[0].GetComponent<Transform>();
     }
-	
-	// Update is called once per frame
-	void Update () {
-		if(House == null)
-        {
-            House = GameObject.Find("GameObject(Clone)");
-        }
 
+    // Update is called once per frame
+    void Update() {
+        if (MainCamera == null)
+        {
+            MainCamera = GameObject.FindGameObjectsWithTag("MainCamera");
+            transMainCamera = MainCamera[0].GetComponent<Transform>();
+        }
 
         if (buttonDown)
         {
             House.gameObject.transform.position += transMainCamera.forward.normalized / 10;
+          //  _ShowAndroidToastMessage("Pressed");
         }
 	}
 
@@ -57,13 +56,35 @@ public class HouseMove : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         House.gameObject.transform.position += new Vector3(0.0f, 0, -1.0f);
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData ped)
     {
         buttonDown = true;
     }
 
-    public void OnPointerUp(PointerEventData eventData)
+    public void OnPointerUp(PointerEventData ped)
     {
         buttonDown = false;
     }
+
+    /// <summary>
+    /// Show an Android toast message.
+    /// </summary>
+    /// <param name="message">Message string to show in the toast.</param>
+    private void _ShowAndroidToastMessage(string message)
+    {
+        AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject unityActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+
+        if (unityActivity != null)
+        {
+            AndroidJavaClass toastClass = new AndroidJavaClass("android.widget.Toast");
+            unityActivity.Call("runOnUiThread", new AndroidJavaRunnable(() =>
+            {
+                AndroidJavaObject toastObject = toastClass.CallStatic<AndroidJavaObject>("makeText", unityActivity,
+                    message, 0);
+                toastObject.Call("show");
+            }));
+        }
+    }
+
 }

@@ -29,7 +29,7 @@ public class ButtonPressed : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
             {
                 UserObject = GameObject.Find("Set(Clone)").transform.GetChild(0).gameObject;
             }
-            UserObject.transform.position += new Vector3(0, 0.5f, 0);
+            UserObject.transform.position += new Vector3(0, 0.02f, 0);
             Walking_Rope_anim.enable_check = !Walking_Rope_anim.enable_check;
             Start_time += Time.deltaTime;
             if (Start_time >= Change_time)

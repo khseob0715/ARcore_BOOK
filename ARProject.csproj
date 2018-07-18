@@ -438,9 +438,11 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSessionStatus.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
     <Compile Include="Assets\HouseMove.cs" />
+    <Compile Include="Assets\MyScript\Button.cs" />
     <Compile Include="Assets\MyScript\Directions_string.cs" />
     <Compile Include="Assets\MyScript\OnePaly.cs" />
     <Compile Include="Assets\MyScript\Show_Toast_message.cs" />
+    <Compile Include="Assets\MyScript\TouchInput.cs" />
     <Compile Include="Assets\MyScript\Walking_Rope_anim.cs" />
   </ItemGroup>
   <ItemGroup>
