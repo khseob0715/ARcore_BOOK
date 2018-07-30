@@ -310,6 +310,7 @@
     <Compile Include="Assets\ButtonPressed.cs" />
     <Compile Include="Assets\ForestVision\09 Scripts\FV_BranchRotation.cs" />
     <Compile Include="Assets\ForestVision\09 Scripts\FV_Wind.cs" />
+    <Compile Include="Assets\Giant_Move.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedImage\Scripts\AugmentedImageExampleController.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedImage\Scripts\AugmentedImageVisualizer.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\CloudAnchor\Scripts\AnchorIdFromRoomRequestMessage.cs" />

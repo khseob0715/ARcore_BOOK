@@ -234,6 +234,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:GoogleARCore.Examples.Common.DetectedPlaneVisualizer
 3c06a9bb7a821f8a9b0c19371be579d9 Assembly-CSharp.dll:.HouseMove
+cb0b8d20035db5768c1a46ecb0d84d55 Assembly-CSharp.dll:.TouchInput
 26215f135eeb48d8fa1189498c107f6c Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
 0561521e336e270e6e5a9c61387cb838 Vuforia.UnityExtensions.dll:Vuforia.AnchorInputListenerBehaviour
 2e0fd93f459db951da0e2e94e2e33fb7 Vuforia.UnityExtensions.dll:Vuforia.AnchorStageBehaviour
@@ -269,6 +270,7 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
+63dcdd917fa9b045fb335a214a534172 Assembly-CSharp.dll:.Button
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OnePaly
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Walking_Rope_anim
 26215f135eeb48d8fa1189498c107f6c Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
@@ -306,5 +308,4 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
-cb0b8d20035db5768c1a46ecb0d84d55 Assembly-CSharp.dll:.TouchInput
-63dcdd917fa9b045fb335a214a534172 Assembly-CSharp.dll:.Button
+24fffc76085e74263c715c77f109b05c Assembly-CSharp.dll:.Giant_Move
